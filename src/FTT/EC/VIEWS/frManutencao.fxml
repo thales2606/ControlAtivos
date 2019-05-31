@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="641.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="326.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="31.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código do Ativo" />
+            <TextField layoutX="127.0" layoutY="31.0" prefHeight="25.0" prefWidth="185.0" />
+            <FontAwesomeIcon iconName="SEARCH" layoutX="312.0" layoutY="52.0" size="2em" />
+            <CheckBox layoutX="127.0" layoutY="77.0" mnemonicParsing="false" text="Usar garantia" />
+            <Pane layoutX="31.0" layoutY="102.0" prefHeight="36.0" prefWidth="450.0">
+               <children>
+                  <Text layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de manutenção" />
+                  <RadioButton layoutX="132.0" layoutY="14.0" mnemonicParsing="false" text="Corretiva" />
+                  <RadioButton layoutX="226.0" layoutY="14.0" mnemonicParsing="false" text="Preventiva" />
+                  <RadioButton layoutX="331.0" layoutY="14.0" mnemonicParsing="false" text="Melhoria" />
+               </children>
+            </Pane>
+            <Text layoutX="31.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motivo" />
+            <ComboBox layoutX="106.0" layoutY="162.0" prefWidth="150.0" />
+            <Text layoutX="31.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local" />
+            <RadioButton layoutX="69.0" layoutY="202.0" mnemonicParsing="false" text="Interna" />
+            <RadioButton layoutX="143.0" layoutY="202.0" mnemonicParsing="false" text="Externa" />
+            <Text layoutX="28.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor R$" />
+            <TextField layoutX="80.0" layoutY="234.0" prefHeight="25.0" prefWidth="140.0" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane prefHeight="90.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon iconName="ANGLE_DOUBLE_LEFT" layoutX="14.0" layoutY="41.0" size="4em" />
+            <FontAwesomeIcon iconName="ANGLE_LEFT" layoutX="57.0" layoutY="41.0" size="4em" />
+            <FontAwesomeIcon iconName="ANGLE_RIGHT" layoutX="105.0" layoutY="41.0" size="4em" />
+            <FontAwesomeIcon iconName="ANGLE_DOUBLE_RIGHT" layoutX="148.0" layoutY="41.0" size="4em" />
+            <FontAwesomeIcon fill="#609736" iconName="SAVE" layoutX="260.0" layoutY="51.0" size="4em" />
+            <FontAwesomeIcon fill="#b23636" iconName="TIMES" layoutX="315.0" layoutY="51.0" size="4em" />
+            <FontAwesomeIcon fill="#aea3a3" iconName="BINOCULARS" layoutX="439.0" layoutY="36.0" size="3em" />
+            <FontAwesomeIcon fill="#70bfc9" iconName="FILE" layoutX="495.0" layoutY="36.0" size="3em" />
+            <FontAwesomeIcon fill="#a8914c" iconName="EDIT" layoutX="547.0" layoutY="36.0" size="3em" />
+            <FontAwesomeIcon fill="#c34747" iconName="TRASH" layoutX="598.0" layoutY="36.0" size="3em" />
+         </children></Pane>
+   </top>
+</BorderPane>

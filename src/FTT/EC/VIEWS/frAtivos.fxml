@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="722.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FTT.EC.CONTROLLERS.AtivosController">
+   <top>
+      <Pane prefHeight="122.0" prefWidth="722.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fx:id="btnPrimeiro" iconName="ANGLE_DOUBLE_LEFT" layoutX="37.0" layoutY="91.0" size="4em" wrappingWidth="27.428571701049805" />
+            <FontAwesomeIcon fx:id="btnAnterior" iconName="ANGLE_LEFT" layoutX="104.0" layoutY="91.0" size="4em" />
+            <FontAwesomeIcon fx:id="btnProximo" iconName="ANGLE_RIGHT" layoutX="168.0" layoutY="91.0" size="4em" />
+            <FontAwesomeIcon fx:id="btnUltimo" iconName="ANGLE_DOUBLE_RIGHT" layoutX="227.0" layoutY="91.0" size="4em" />
+            <FontAwesomeIcon fx:id="btnGravar" fill="#609736" iconName="SAVE" layoutX="303.0" layoutY="91.0" size="4em" />
+            <FontAwesomeIcon fx:id="btnCancelar" fill="#b23636" iconName="TIMES" layoutX="378.0" layoutY="91.0" size="4em" />
+            <FontAwesomeIcon fx:id="btnInclui" fill="#70bfc9" iconName="FILE" layoutX="534.0" layoutY="87.0" size="3em" />
+            <FontAwesomeIcon fx:id="btnAltera" fill="#a8914c" iconName="EDIT" layoutX="600.0" layoutY="92.0" size="3em" />
+            <FontAwesomeIcon fx:id="btnExclui" fill="#c34747" iconName="TRASH" layoutX="664.0" layoutY="91.0" size="3em" />
+            <Label layoutX="28.0" layoutY="96.0" text="Primeiro" />
+            <Label layoutX="90.0" layoutY="96.0" text="Anterior" />
+            <Label layoutX="154.0" layoutY="97.0" text="Proximo" />
+            <Label layoutX="223.0" layoutY="97.0" text="Ultimo" />
+            <Label layoutX="301.0" layoutY="97.0" text="SALVAR" />
+            <Label layoutX="367.0" layoutY="97.0" text="CANCELAR" />
+            <Label layoutX="535.0" layoutY="97.0" text="Novo" />
+            <Label layoutX="596.0" layoutY="97.0" text="Editar" />
+            <Label layoutX="661.0" layoutY="97.0" text="Excluir" />
+            <Label layoutX="72.0" layoutY="14.0" prefHeight="36.0" prefWidth="164.0" text="Ativos">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon iconName="ARCHIVE" layoutX="22.0" layoutY="39.0" size="3em" />
+         </children></Pane>
+   </top>
+   <center>
+      <Pane prefHeight="438.0" prefWidth="722.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="28.0" text="ID" />
+            <TextField fx:id="txtId" disable="true" layoutX="73.0" layoutY="24.0" prefHeight="25.0" prefWidth="116.0" />
+            <Label layoutX="31.0" layoutY="63.0" text="Nome" />
+            <TextField fx:id="txtNome" layoutX="73.0" layoutY="59.0" prefHeight="25.0" prefWidth="228.0" />
+            <Label layoutX="31.0" layoutY="98.0" text="Setor" />
+            <TextField fx:id="txtSetor" layoutX="73.0" layoutY="94.0" prefHeight="25.0" prefWidth="141.0" />
+            <Label layoutX="31.0" layoutY="139.0" text="Valor de Compra   R$" />
+            <TextField fx:id="txtVlrCompra" layoutX="146.0" layoutY="135.0" prefHeight="25.0" prefWidth="102.0" />
+            <DatePicker fx:id="dtCompra" layoutX="476.0" layoutY="188.0" />
+            <Label layoutX="380.0" layoutY="192.0" text="Data de Compra" />
+            <Label layoutX="27.0" layoutY="192.0" text="Numero de Nota" />
+            <TextField fx:id="txtNumNota" layoutX="129.0" layoutY="188.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label layoutX="31.0" layoutY="241.0" text="Tipo Garantia" />
+            <TextField fx:id="txtTipoGarantia" layoutX="117.0" layoutY="237.0" prefHeight="25.0" prefWidth="254.0" />
+            <DatePicker fx:id="dtValidade" layoutX="476.0" layoutY="237.0" />
+            <Label layoutX="421.0" layoutY="241.0" text="Validade" />
+            <ImageView fitHeight="125.0" fitWidth="160.0" layoutX="525.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/produto-sem-imagem-1.gif" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="cbClassific" layoutX="114.0" layoutY="284.0" prefWidth="150.0" />
+            <Label layoutX="28.0" layoutY="288.0" text="Classificação" />
+            <ComboBox fx:id="cbUsuario" layoutX="371.0" layoutY="284.0" prefWidth="150.0" />
+            <Label layoutX="312.0" layoutY="288.0" text="Usuario" />
+            <TextArea fx:id="txtDescri" layoutX="180.0" layoutY="336.0" prefHeight="76.0" prefWidth="304.0" />
+            <Text layoutX="27.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição do Equipamento" />
+            <TextField fx:id="txtImgPath" layoutX="501.0" layoutY="144.0" />
+            <Button fx:id="btnSearchImg" layoutX="650.0" layoutY="144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" text="..." />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
